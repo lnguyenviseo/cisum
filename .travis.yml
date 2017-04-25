@@ -11,4 +11,4 @@ xcode_scheme: CISum                   #test scheme
 xcode_sdk: iphonesimulator9.3
 
 ####Develop branch build status:
-![](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=develop)
+# ![](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=develop)
