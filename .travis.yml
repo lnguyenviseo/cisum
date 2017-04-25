@@ -10,7 +10,4 @@ osx_image: xcode8.3.2
 xcode_sdk: iphonesimulator10.3
 
 ####Develop branch build status:
-![](https://github.com/lnguyenviseo/cisum.svg?branch=develop)
-
-####Master branch build status:
-![](https://github.com/lnguyenviseo/cisum.svg?branch=master)
+![](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=develop)
