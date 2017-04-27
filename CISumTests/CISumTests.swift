@@ -24,7 +24,7 @@ class CISumTests: XCTestCase {
 	func testSumWithIntegers() {
 		let sumCalculator = SumCalculator.shared
 		
-		XCTAssertEqual(sumCalculator.sum(of: 2, and: 3), 5)
+		XCTAssertEqual(sumCalculator.sum(of: 2, and: 3), 6)
 		XCTAssertNotEqual(sumCalculator.sum(of: 250, and: 3000), 4500)
 	}
 	
