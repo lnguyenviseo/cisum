@@ -4,7 +4,7 @@ osx_image: xcode8.3
 branches:
  only:
  - develop
- - master
+ # - master
  - travis-setup
 
 ## The 3 following lines are commented because xctools is not supported on Xcode 8. A script is used instead...
@@ -15,15 +15,19 @@ branches:
 script:
   - set -o pipefail && xcodebuild clean && xcodebuild test -project CISum.xcodeproj -scheme CISum -destination "platform=iOS Simulator,name=iPhone 6s,OS=9.0" | xcpretty
 
-notifications: # set notification options
-  email:
-    recipients:
+# notifications: # set notification options
+  # email:
+    # recipients:
       # - linh.nguyen@viseo.com
-      - victor.carmouze@viseo.com
+      # - victor.carmouze@viseo.com
 
     # change is when the repo status goes from pass to fail or vice versa
-    on_success: always                  #default: change
+    # on_success: always                  #default: change
     # on_failure: change                  #default: always
 
     # disable email notification
     # email: false
+
+  # slack: '<account>:<token>#<channel>'
+  #   on_success: always
+  #   on_failure: always
