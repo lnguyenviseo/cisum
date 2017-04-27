@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.3.2
+osx_image: xcode8
 
 # branches:
 #  only:
@@ -13,5 +13,5 @@ xcode_sdk: iphonesimulator9.3
 script:
   - xcodebuild -project CISum.xcodeproj -scheme CISum -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6S,OS=9.3" clean test build | xcpretty
 
-####Develop branch build status:
-# ![](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=develop)
+### Develop branch build status:
+[![Develop branch build status](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=travis-setup)](https://travis-ci.org/lnguyenviseo/cisum)
