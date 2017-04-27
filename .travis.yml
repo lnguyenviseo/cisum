@@ -6,12 +6,12 @@ osx_image: xcode8
 #  - develop
 #  - travis-setup
 
-xcode_project: CISum.xcodeproj        #can also use xcode_workspace
-xcode_scheme: CISum                   #test scheme
-xcode_sdk: iphonesimulator10.0
+# xcode_project: CISum.xcodeproj        #can also use xcode_workspace
+# xcode_scheme: CISum                   #test scheme
+# xcode_sdk: iphonesimulator10.0
 
 # script:
-  # - xcodebuild clean build test -project CISum.xcodeproj -scheme CISum -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6S,OS=10.0" | xcpretty
+  - xcodebuild clean build test -project CISum.xcodeproj -scheme CISum -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6S" | xcpretty
 
 ### Develop branch build status:
 # [![Develop branch build status](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=travis-setup)](https://travis-ci.org/lnguyenviseo/cisum)
