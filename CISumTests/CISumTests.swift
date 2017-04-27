@@ -21,10 +21,16 @@ class CISumTests: XCTestCase {
         super.tearDown()
     }
     
-	func testSum() {
+	func testSumWithIntegers() {
 		let sumCalculator = SumCalculator.shared
 		
 		XCTAssertEqual(sumCalculator.sum(of: 2, and: 3), 5)
+		XCTAssertNotEqual(sumCalculator.sum(of: 250, and: 3000), 4500)
+	}
+	
+	func testSumWithFloats() {
+		let sumCalculator = SumCalculator.shared
+		
 		XCTAssertEqual(sumCalculator.sum(of: 3.4, and: 5.5), 8.9)
 		XCTAssertNotEqual(sumCalculator.sum(of: 1.25, and: 1.25), 3.0)
 	}
