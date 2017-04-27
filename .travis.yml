@@ -12,7 +12,7 @@ osx_image: xcode8.3
 # xcode_sdk: iphonesimulator10.3
 
 script:
-  - xcodebuild clean test -project CISum.xcodeproj -scheme CISum -destination "platform=iOS Simulator,name=iPhone 6s,OS=9.0" | xcpretty && exit ${PIPESTATUS[0]}
+  - set -o pipefail && xcodebuild clean && xcodebuild test -project CISum.xcodeproj -scheme CISum -destination "platform=iOS Simulator,name=iPhone 6s,OS=9.0" | xcpretty
 
 #### Develop branch build status:
 # [![Develop branch build status](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=travis-setup)](https://travis-ci.org/lnguyenviseo/cisum)
