@@ -1,10 +1,11 @@
 language: objective-c
 osx_image: xcode8.3
 
-# branches:
-#  only:
-#  - develop
-#  - travis-setup
+branches:
+ only:
+ - develop
+ - master
+ - travis-setup
 
 ## The 3 following lines are commented because xctools is not supported on Xcode 8. A script is used instead...
 # xcode_project: CISum.xcodeproj        #can also use xcode_workspace
@@ -14,5 +15,15 @@ osx_image: xcode8.3
 script:
   - set -o pipefail && xcodebuild clean && xcodebuild test -project CISum.xcodeproj -scheme CISum -destination "platform=iOS Simulator,name=iPhone 6s,OS=9.0" | xcpretty
 
-#### Develop branch build status:
-# [![Develop branch build status](https://travis-ci.org/lnguyenviseo/cisum.svg?branch=travis-setup)](https://travis-ci.org/lnguyenviseo/cisum)
+notifications: # set notification options
+  email:
+    recipients:
+      # - linh.nguyen@viseo.com
+      - victor.carmouze@viseo.com
+
+    # change is when the repo status goes from pass to fail or vice versa
+    on_success: always                  #default: change
+    # on_failure: change                  #default: always
+
+    # disable email notification
+    # email: false
