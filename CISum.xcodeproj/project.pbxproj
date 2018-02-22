@@ -145,7 +145,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Renault Nissan Alliance - ACMS";
+				ORGANIZATIONNAME = "Linh NGUYEN";
 				TargetAttributes = {
 					E271051F1EAF4F9A002C096F = {
 						CreatedOnToolsVersion = 8.3.2;
