@@ -145,7 +145,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Renault Nissan Alliance - ACMS";
+				ORGANIZATIONNAME = "Linh NGUYEN";
 				TargetAttributes = {
 					E271051F1EAF4F9A002C096F = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -416,6 +416,7 @@
 				E271053F1EAF4F9A002C096F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E27105401EAF4F9A002C096F /* Build configuration list for PBXNativeTarget "CISumTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				E27105421EAF4F9A002C096F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
