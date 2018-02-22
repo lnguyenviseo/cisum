@@ -3,7 +3,7 @@
 //  CISumTests
 //
 //  Created by lng3578 on 25/04/2017.
-//  Copyright © 2017 Renault Nissan Alliance - ACMS. All rights reserved.
+//  Copyright © 2017 Linh NGUYEN. All rights reserved.
 //
 
 import XCTest
